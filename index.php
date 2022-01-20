@@ -1,7 +1,7 @@
 <?php
 require_once "generator.php";
 
-$request_array = array_values(array_filter(explode('/', $request)));
+$request_array = array_values(array_filter(explode('/', $_SERVER['REQUEST_URI'])));
 
 $response = "";
 if ($request_array[0] == 'user') {
