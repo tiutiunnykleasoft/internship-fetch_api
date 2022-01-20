@@ -1,9 +1,6 @@
 <?php
 require_once "generator.php";
 
-
-$prefix = '/intern';
-$request = explode($prefix, $_SERVER['REQUEST_URI'])[1];
 $request_array = array_values(array_filter(explode('/', $request)));
 
 $response = "";
