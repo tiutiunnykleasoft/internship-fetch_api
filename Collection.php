@@ -23,7 +23,8 @@ class Collection
         }
     }
 
-    public function getAllByField($field, $value)
+    /** @return array<T> */
+    public function getAllByField($field, $value): array
     {
         $response = [];
         foreach ($this->items as $item) {
@@ -32,6 +33,12 @@ class Collection
             }
         }
         return $response;
+    }
+
+    /** @return array<T> */
+    public function getAll(): array
+    {
+        return $this->items;
     }
 
     /** @return T */
