@@ -10,7 +10,7 @@ if ($request_array[0] == 'user') {
         if (gettype($user) == 'object') {
             header("HTTP/1.1 200 OK");
         } else {
-            header("HTTP/1.1 400 Bad Request");
+            header("HTTP/1.1 404 Bad Request");
         }
         $response = $user;
     } elseif (count($request_array) == 1) {
