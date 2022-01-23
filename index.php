@@ -1,7 +1,8 @@
 <?php
 require_once "generator.php";
 
-$request = explode('/intern', $_SERVER['REQUEST_URI'])[1];
+//$request = explode('/intern', $_SERVER['REQUEST_URI'])[1];
+$request = $_SERVER['REQUEST_URI'];
 $request_array = array_values(array_filter(explode('/', $request)));
 
 $response = "";
