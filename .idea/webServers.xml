@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="316d8a06-b8bc-41a4-b5ad-5eea2b127f5b" name="123" url="http://localhost">
+        <fileTransfer mountedRoot="$USER_HOME$/Desktop/pet-projects/supershvey/docker-compose-lamp/www_mirror/intern" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
