@@ -1,6 +1,7 @@
 <?php
 require_once "generator.php";
 
+
 $request_array = array_values(array_filter(explode('/', $_SERVER['REQUEST_URI'])));
 
 $file = "log.txt";
@@ -14,7 +15,13 @@ $response = "";
 if (count($request_array) == 1 && $request_array[0] == 'user') {
     header("HTTP/1.1 200 OK");
     $message['success'] += 1;
-    $response = $users->getAll();
+    $users_not_converted = $users->getAll();
+    $response = [];
+
+    foreach ($users_not_converted as $key => $item) {
+        $item->setId($key);
+        $response[] = $item;
+    }
 } elseif (count($request_array) == 3 && $request_array[0] == 'transaction' && $request_array[1] == 'user') {
     $response = $transactions->getAllByField('customer_id', $request_array[2]);
     if (empty($response)) {
@@ -39,6 +46,7 @@ function NotFound(&$response)
 }
 
 header('Content-Type: application/json');
+
 $message['count'] += 1;
 $current = json_encode($message);
 file_put_contents($file, $current);

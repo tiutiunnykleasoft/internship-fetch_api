@@ -3,8 +3,9 @@
 class User
 {
     public $name;
-    public $email;
-    public $status;
+    public string $email;
+    public string $status;
+    public $id;
 
     public function setStatus($status)
     {
@@ -21,6 +22,12 @@ class User
     public function setName($name)
     {
         $this->name = $name;
+        return $this;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
         return $this;
     }
 }

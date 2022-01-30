@@ -4,10 +4,11 @@ require_once "User.php";
 require_once "Collection.php";
 require_once "Transaction.php";
 
-const PRODUCTS = ['Milk', 'Water', 'Car', 'Paper', 'Pencil', 'Coca-cola', 'PC', 'Laptop', 'Notebook', 'Smartphone', 'Gun', 'Panda', 'Board game', 'Porridge', 'Cherry', 'Banana', 'Pineapple', 'Nuts', 'Snickers', 'Milky way', 'Cup', 'Vodka', 'Juice', 'Candy', 'Rabbit', 'Circle', 'Heaters', 'T-shirt'];
+
+const PRODUCTS = ['Book', 'Airplane', 'Pomelo', 'Tango', 'Lenovo', 'Fluxx', 'Milk', 'Water', 'Car', 'Paper', 'Pencil', 'Coca-cola', 'PC', 'Laptop', 'Notebook', 'Smartphone', 'Gun', 'Panda', 'Board game', 'Porridge', 'Cherry', 'Banana', 'Pineapple', 'Nuts', 'Snickers', 'Milky way', 'Cup', 'Vodka', 'Juice', 'Candy', 'Rabbit', 'Circle', 'Heaters', 'T-shirt'];
 const STATUSES = ['active', 'passive', 'semi'];
-const NAMES_FIRST = ['fire', 'fast', 'quick', 'invisible', 'resistance', 'cold', 'warm', 'fine', 'smile', 'angry', 'sexy', 'glory', 'tricky', 'hidden', 'big', 'small', 'baby', 'great'];
-const NAMES_SECOND = ['gatsby', 'spider', 'cherry', 'pumpkin', 'sneaker', 'cucumber', 'balloon', 'president', 'children', 'student', 'computer', 'fox', 'snail', 'butterfly', 'phone', 'friend', 'warrior'];
+const NAMES_FIRST = ['silent', 'step', 'dirty', 'dumb', 'smart', 'large', 'huge', 'verbal', 'dead', 'awake', 'rage', 'bonfire', 'useless', 'snow', 'fire', 'fast', 'quick', 'invisible', 'resistance', 'cold', 'warm', 'fine', 'smile', 'angry', 'sexy', 'glory', 'tricky', 'hidden', 'big', 'small', 'baby', 'great'];
+const NAMES_SECOND = ['potato', 'gatsby', 'spider', 'cherry', 'looser', 'lake', 'crab', 'leopard', 'lion', 'penguin', 'pumpkin', 'sneaker', 'cucumber', 'balloon', 'president', 'children', 'student', 'computer', 'fox', 'snail', 'butterfly', 'phone', 'friend', 'warrior'];
 const EMAIL_END = ['ua', 'world', 'com', 'no', 'kh', 'plt', 'tv', 'mini', 'inbox', 'indoor', 'box'];
 const EMAIL_MIDDLE = ['commerce', 'payment', 'leaves', 'trees', 'shield', 'star', 'track', 'site', 'ucoz', 'google', 'gmail', 'meta', 'suprunovka', 'khpi'];
 
